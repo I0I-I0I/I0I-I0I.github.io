@@ -2143,7 +2143,7 @@ h4 {
   }
 
   .products__list {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: (1fr);
     grid-template-columns: repeat(
 			2,
 			1fr

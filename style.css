@@ -3,26 +3,36 @@
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 400;
 	color: white;
+	overflow: hidden;
 }
 
 .page__body {
-	min-height: 80vh;
 	background-color: #0b061f;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 50px;
+	padding: 0;
+}
+
+.wrapper {
+	height: 80vh;
+	transform: translateY(25%);
+}
+
+.container {
+	max-width: 1185px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .title {
 	font-size: 50px;
 	font-family: 'Roboto Mono', monospace;
+	text-align: center;
 }
 
 .site__list {
+	max-width: 1000px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+	justify-content: center;
 	gap: 25px;
 
 	list-style: none;
@@ -31,8 +41,11 @@
 .site__link {
 	background-color: #160066;
 	color: inherit;
+	text-align: center;
 
-	padding: 30px 100px;
+	display: inline-block;
+	width: 100%;
+	padding: 30px 0;
 	border: 2px solid #0f0047;
 	border-radius: 20px;
 
