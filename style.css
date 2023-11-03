@@ -1,0 +1,58 @@
+.page {
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	color: white;
+}
+
+.page__body {
+	min-height: 80vh;
+	background-color: #0b061f;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.title {
+	font-size: 50px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.site__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+
+	list-style: none;
+}
+
+.site__link {
+	background-color: #160066;
+	color: inherit;
+
+	padding: 30px 100px;
+	border: 2px solid #0f0047;
+	border-radius: 20px;
+
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.site__item {
+	transition: transform 0.5s ease;
+}
+
+.site__item:hover {
+	transform: translateY(-5px) scale(1.05);
+}
+
+.site__item:hover .site__link {
+	background-color: #0b061f;
+}
+
+*::selection {
+	background-color: #fff;
+	color: #000;
+}
