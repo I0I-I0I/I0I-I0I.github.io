@@ -1,0 +1,37 @@
+/* Navigation */
+
+.header__nav {
+	background-color: #fff;
+}
+
+.nav__inner {
+	font-size: 1rem;
+	display: grid;
+	grid-template-columns:
+		max-content
+		max-content
+		1fr
+		min-content;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 40px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.nav__list {
+	display: flex;
+	gap: 24px;
+	font-size: 1em;
+}
+
+.link-icon img {
+	object-position: 0 3px;
+	transition: 0.3s all;
+}
+
+.link:hover > .link-icon img {
+	transform: rotate(180deg);
+	fill: var(--hover-link);
+	object-position: 0 -4px;
+}

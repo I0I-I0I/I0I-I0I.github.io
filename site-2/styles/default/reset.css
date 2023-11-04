@@ -1,0 +1,8 @@
+/* prettier-ignore */
+html {font-size: 1em;box-sizing: border-box;}
+/* prettier-ignore */
+*,*::before,*::after {margin: 0;padding: 0;border: 0;box-sizing: inherit;}
+/* prettier-ignore */
+a {text-decoration: none;}
+/* prettier-ignore */
+ul,ol {list-style-type: none;}

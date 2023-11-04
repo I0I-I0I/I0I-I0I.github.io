@@ -1,0 +1,25 @@
+.footer {
+	background-color: #f0f0f0;
+	padding-top: 140px;
+	margin-top: -140px;
+	z-index: 1;
+}
+
+.footer__inner {
+	margin-top: 20px;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.payments__list {
+	display: flex;
+	gap: 12px;
+}
+
+.payments__link img {
+	vertical-align: middle;
+	text-align: center;
+}

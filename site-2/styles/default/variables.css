@@ -1,0 +1,11 @@
+:root {
+	--page-width: 1240px;
+	--page-padding: 16px;
+	--main-width: calc(
+		var(--page-width) -
+			var(--page-padding)
+	);
+
+	--main-black: #000;
+	--hover-link: rgb(214, 193, 155);
+}

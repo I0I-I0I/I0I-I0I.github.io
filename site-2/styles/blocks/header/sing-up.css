@@ -1,0 +1,28 @@
+.header__sing-up {
+	font-size: 0.875rem;
+	background-color: var(--main-black);
+	color: white;
+	padding: 10px 0;
+}
+
+.sing-up__inner {
+	display: grid;
+	grid-template-columns:
+		1fr
+		max-content
+		1fr;
+	gap: 10px;
+	align-items: center;
+}
+
+.sing-up__link {
+	color: white;
+	font-weight: 500;
+	text-decoration-line: underline;
+}
+
+.sing-up__button-close {
+	cursor: pointer;
+	background-color: transparent;
+	justify-self: end;
+}

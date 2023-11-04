@@ -1,0 +1,55 @@
+.comments {
+	margin-bottom: 80px;
+}
+
+.comments__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+
+	margin-bottom: 40px;
+}
+
+.comments__title {
+	font-family: "Integral CF";
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.arrow-left,
+.arrow-right {
+	cursor: pointer;
+}
+
+.comments__nav {
+	display: flex;
+	column-gap: 16px;
+}
+
+.comments__list {
+	display: flex;
+	column-gap: 20px;
+}
+
+.comments__item {
+	padding: 28px 32px;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	border-radius: 1.25em;
+}
+
+.comments__sender {
+	font-size: 1.25em;
+	font-weight: 700;
+
+	display: flex;
+	column-gap: 4px;
+	align-items: center;
+
+	margin-top: 20px;
+	margin-bottom: 16px;
+}
+
+.comments__text {
+	color: rgb(0 0 0 / 0.6);
+}

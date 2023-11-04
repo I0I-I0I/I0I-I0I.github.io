@@ -1,0 +1,31 @@
+/* Default */
+@import "default/reset.css";
+@import "default/variables.css";
+
+/* Fonts */
+@import "other/fonts.css";
+/* Other */
+@import "other/rating.css";
+
+/* Blocks */
+@import "blocks/body.css";
+
+/* Header */
+@import "blocks/header/header.css";
+@import "blocks/header/sing-up.css";
+@import "blocks/header/logo.css";
+@import "blocks/header/navigation.css";
+@import "blocks/header/search.css";
+@import "blocks/header/brands.css";
+@import "blocks/header/greeting.css";
+
+/* Main */
+@import "blocks/main/products.css";
+@import "blocks/main/main.css";
+@import "blocks/main/browser-by-dress.css";
+@import "blocks/main/comments.css";
+@import "blocks/main/subscribe-email.css";
+
+/* Footer */
+@import "blocks/footer/footer.css";
+@import "blocks/footer/about-features.css";

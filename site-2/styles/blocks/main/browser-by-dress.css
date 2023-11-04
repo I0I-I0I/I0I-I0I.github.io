@@ -1,0 +1,90 @@
+.browser-by-dress {
+	font-size: 1rem;
+	margin-bottom: 80px;
+}
+
+.browser-by-dress__inner {
+	background-color: #f0f0f0;
+	padding: 70px 40px 45px 40px;
+	border-radius: 2.5em;
+}
+
+.browser-by-dress__title {
+	font-family: Integral CF;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align-last: center;
+	margin-bottom: 55px;
+}
+
+.browser-by-dress__list {
+	display: grid;
+	grid-template-columns: repeat(
+		5,
+		1fr
+	);
+	grid-auto-rows: 250px;
+	gap: 20px;
+}
+
+.browser-by-dress__item {
+	background-color: #fff;
+	border-radius: 1.25em;
+
+	transition: all 0.3s ease;
+}
+
+.browser-by-dress__casual {
+	grid-column: span 2;
+	background: url("../../../images/style-1.jpg")
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.browser-by-dress__formal {
+	grid-column: span 3;
+	background: url("../../../images/style-2.jpg")
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.browser-by-dress__party {
+	grid-column: span 3;
+	background: url("../../../images/style-3.jpg")
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.browser-by-dress__gym {
+	grid-column: span 2;
+	background: url("../../../images/style-4.jpg")
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.browser-by-dress__link {
+	display: block;
+	height: 100%;
+	padding-top: 25px;
+	padding-left: 36px;
+
+	transition: all 0.3s ease;
+}
+
+.browser-by-dress__link:hover {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.browser-by-dress__item:hover {
+	background-position: top;
+}
+
+.browser-by-dress__name {
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+}

@@ -1,0 +1,9 @@
+.brands {
+	background-color: black;
+	padding: 44px 0;
+}
+
+.brands__list {
+	display: flex;
+	justify-content: space-between;
+}
