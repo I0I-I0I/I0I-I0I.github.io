@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Description -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="image" content="./image/logo.png" />
+
+	<!-- For social -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="968" />
+	<meta property="og:image:height" content="504" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:url" content="http://localhost:3000/" />
+	<meta name="twitter:image:src" content="http://localhost:3000/image.png" />
+	<meta name="twitter:domain" content="localhost:3000" />
+	<meta name="twitter:site" content="@" />
+
+	<meta name="apple-mobile-web-app-title" content="Title" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- https://favicon.io/ -->
+	<!-- https://realfavicongenerator.net/ -->
+
+	<meta rel="preconnect" href="https://fonts.google.com/" />
+
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+
+	<!-- Theme -->
+	<meta name="msapplication-TileImage" content="./image/" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff" />
+
+	<!-- Default url -->
+	<link rel="canonical" href="" />
+
+	<!-- css and js -->
+	<link rel="stylesheet" href="styles/index.min.css?_v=20240322181315" />
+	<script src="js/app.min.js?_v=20240322181315" defer></script>
+	<title>Main</title>
+
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240322181315"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240322181315"></script>
+</head>
+
+
+	<body class="page__body">
+		<header id="header" class="header">
+			<div class="container header__inner">
+	<a href="./index.html" class="logo">
+		<img src="./images/logo.svg" alt="" class="logo__image" />
+	</a>
+	<div id="dropdown" class="dropdown">
+		<button id="button-burger" class="button--burger" aria-label="Open menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<div id="dropdown-inner" class="dropdown__inner">
+			<nav class="nav header__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="./about.html" class="nav__link">About Us</a>
+					</li>
+					<li class="nav__item">
+						<a href="./services.html" class="nav__link">Services</a>
+					</li>
+					<li class="nav__item">
+						<a href="./work.html" class="nav__link">Work</a>
+					</li>
+					<li class="nav__item">
+						<a href="./news.html" class="nav__link">News</a>
+					</li>
+					<li class="nav__item">
+						<a href="./contacts.html" class="nav__link">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="contacts__list--header">
+				<li class="contacts__item--header contacts__item--phone">
+					<span class="contacts__caption">Call us</span>
+					<a href="tel:4055550128" class="contacts__link">(405) 555-0128</a>
+				</li>
+				<li class="contacts__item--header contacts__item--mail">
+					<span class="contacts__caption">Talk to us</span>
+					<a href="mailto:hello@createx.com" class="contacts__link"
+						>hello@createx.com</a
+					>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<main class="main">
+			<section id="hero" class="hero hero--news">
+	<div class="container hero__inner">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item">
+					<a href="./index.html" class="breadcrumbs__link">Homepage</a>
+				</li>
+				<li class="breadcrumbs__item">
+					<a href="#" class="breadcrumbs__link breadcrumbs__link--current"
+						>News</a
+					>
+				</li>
+			</ul>
+		</div>
+		<h1 class="title-main">News</h1>
+		<p class="hero__text">
+			Stay tuned with our news, expert tips and articles.
+		</p>
+	</div>
+	<div class="hero__shadow"></div>
+</section>
+
+			<section class="categories">
+	<div class="categories__container">
+		<h2 class="title categories__title">Categories</h2>
+		<div class="swiper swiper-buttons">
+			<ul class="categories__list swiper-wrapper">
+				<li class="categories__item swiper-slide">
+					<button
+						class="button button--stroke button--disable-hover categories__button"
+					>
+						All news
+					</button>
+				</li>
+				<li class="categories__item swiper-slide">
+					<button class="button button--empty categories__button">
+						Company News
+					</button>
+				</li>
+				<li class="categories__item swiper-slide">
+					<button class="button button--empty categories__button">
+						Innovation
+					</button>
+				</li>
+				<li class="categories__item swiper-slide">
+					<button class="button button--empty categories__button">
+						Industry News
+					</button>
+				</li>
+				<li class="categories__item swiper-slide">
+					<button class="button button--empty categories__button">
+						Expert Tips
+					</button>
+				</li>
+				<li class="categories__item swiper-slide">
+					<button class="button button--empty categories__button">
+						Marketing
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+			<section class="all-news">
+	<div class="container all-news__container">
+		<h2 class="visually-hidden">All news</h2>
+		<ul class="all-news__list">
+			<li class="all-news__item">
+				<article class="news">
+					<div class="image-block image-block--large">
+						<picture><source srcset="./images/news/news-1.webp" type="image/webp"><img src="./images/news/news-1.jpg" alt="" class="news__image" /></picture>
+					</div>
+					<div class="news__inner">
+						<h3 class="subtitle">
+							<a href="./news__item.html" class="news__link">
+								How to &nbsp; Build Climate Change-Resilient Infrastructure
+							</a>
+						</h3>
+						<ul class="meta__list meta__list--news">
+							<li class="meta__item">
+								<a href="#" class="meta__text">Industry News</a>
+							</li>
+							<li class="meta__item">
+								<time class="meta__text" datetime="2020-06-24 19:00"
+									>June 24, 2020</time
+								>
+							</li>
+							<li class="meta__item">
+								<span class="meta__text meta__text--comments">4 comments</span>
+							</li>
+						</ul>
+						<p class="news__text">
+							Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+							faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+							bibendum turpis convallis enim, nibh convallis...
+						</p>
+					</div>
+				</article>
+			</li>
+			<li class="all-news__item">
+				<article class="news">
+					<div class="image-block image-block--large">
+						<picture><source srcset="./images/news/news-1.webp" type="image/webp"><img src="./images/news/news-1.jpg" alt="" class="news__image" /></picture>
+					</div>
+					<div class="news__inner">
+						<h3 class="subtitle">
+							<a href="./news__item.html" class="news__link">
+								How to &nbsp; Build Climate Change-Resilient Infrastructure
+							</a>
+						</h3>
+						<ul class="meta__list meta__list--news">
+							<li class="meta__item">
+								<a href="#" class="meta__text">Industry News</a>
+							</li>
+							<li class="meta__item">
+								<time class="meta__text" datetime="2020-06-24 19:00"
+									>June 24, 2020</time
+								>
+							</li>
+							<li class="meta__item">
+								<span class="meta__text meta__text--comments">4 comments</span>
+							</li>
+						</ul>
+						<p class="news__text">
+							Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+							faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+							bibendum turpis convallis enim, nibh convallis...
+						</p>
+					</div>
+				</article>
+			</li>
+			<li class="all-news__item">
+				<article class="news">
+					<div class="image-block image-block--large">
+						<picture><source srcset="./images/news/news-1.webp" type="image/webp"><img src="./images/news/news-1.jpg" alt="" class="news__image" /></picture>
+					</div>
+					<div class="news__inner">
+						<h3 class="subtitle">
+							<a href="./news__item.html" class="news__link">
+								How to &nbsp; Build Climate Change-Resilient Infrastructure
+							</a>
+						</h3>
+						<ul class="meta__list meta__list--news">
+							<li class="meta__item">
+								<a href="#" class="meta__text">Industry News</a>
+							</li>
+							<li class="meta__item">
+								<time class="meta__text" datetime="2020-06-24 19:00"
+									>June 24, 2020</time
+								>
+							</li>
+							<li class="meta__item">
+								<span class="meta__text meta__text--comments">4 comments</span>
+							</li>
+						</ul>
+						<p class="news__text">
+							Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+							faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+							bibendum turpis convallis enim, nibh convallis...
+						</p>
+					</div>
+				</article>
+			</li>
+			<li class="all-news__item">
+				<article class="news">
+					<div class="image-block image-block--large">
+						<picture><source srcset="./images/news/news-1.webp" type="image/webp"><img src="./images/news/news-1.jpg" alt="" class="news__image" /></picture>
+					</div>
+					<div class="news__inner">
+						<h3 class="subtitle">
+							<a href="./news__item.html" class="news__link">
+								How to &nbsp; Build Climate Change-Resilient Infrastructure
+							</a>
+						</h3>
+						<ul class="meta__list meta__list--news">
+							<li class="meta__item">
+								<a href="#" class="meta__text">Industry News</a>
+							</li>
+							<li class="meta__item">
+								<time class="meta__text" datetime="2020-06-24 19:00"
+									>June 24, 2020</time
+								>
+							</li>
+							<li class="meta__item">
+								<span class="meta__text meta__text--comments">4 comments</span>
+							</li>
+						</ul>
+						<p class="news__text">
+							Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+							faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+							bibendum turpis convallis enim, nibh convallis...
+						</p>
+					</div>
+				</article>
+			</li>
+			<li class="all-news__item">
+				<article class="news">
+					<div class="image-block image-block--large">
+						<picture><source srcset="./images/news/news-1.webp" type="image/webp"><img src="./images/news/news-1.jpg" alt="" class="news__image" /></picture>
+					</div>
+					<div class="news__inner">
+						<h3 class="subtitle">
+							<a href="./news__item.html" class="news__link">
+								How to &nbsp; Build Climate Change-Resilient Infrastructure
+							</a>
+						</h3>
+						<ul class="meta__list meta__list--news">
+							<li class="meta__item">
+								<a href="#" class="meta__text">Industry News</a>
+							</li>
+							<li class="meta__item">
+								<time class="meta__text" datetime="2020-06-24 19:00"
+									>June 24, 2020</time
+								>
+							</li>
+							<li class="meta__item">
+								<span class="meta__text meta__text--comments">4 comments</span>
+							</li>
+						</ul>
+						<p class="news__text">
+							Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+							faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+							bibendum turpis convallis enim, nibh convallis...
+						</p>
+					</div>
+				</article>
+			</li>
+			<li class="all-news__item">
+				<article class="news">
+					<div class="image-block image-block--large">
+						<picture><source srcset="./images/news/news-1.webp" type="image/webp"><img src="./images/news/news-1.jpg" alt="" class="news__image" /></picture>
+					</div>
+					<div class="news__inner">
+						<h3 class="subtitle">
+							<a href="./news__item.html" class="news__link">
+								How to &nbsp; Build Climate Change-Resilient Infrastructure
+							</a>
+						</h3>
+						<ul class="meta__list meta__list--news">
+							<li class="meta__item">
+								<a href="#" class="meta__text">Industry News</a>
+							</li>
+							<li class="meta__item">
+								<time class="meta__text" datetime="2020-06-24 19:00"
+									>June 24, 2020</time
+								>
+							</li>
+							<li class="meta__item">
+								<span class="meta__text meta__text--comments">4 comments</span>
+							</li>
+						</ul>
+						<p class="news__text">
+							Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+							faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+							bibendum turpis convallis enim, nibh convallis...
+						</p>
+					</div>
+				</article>
+			</li>
+		</ul>
+		<div class="all-news__pagination-block">
+			<ul class="all-news__pagination-list">
+				<li
+					class="all-news__pagination-bullet all-news__pagination-bullet--active"
+				>
+					<button class="pagination__button pagination__button--active">
+						1
+					</button>
+				</li>
+				<li class="all-news__pagination-bullet">
+					<button class="pagination__button">2</button>
+				</li>
+				<li class="all-news__pagination-bullet">
+					<button class="pagination__button">3</button>
+				</li>
+				<li class="all-news__pagination-bullet">
+					<button class="pagination__button">4</button>
+				</li>
+			</ul>
+			<button class="button-slider button-slider--next">
+				<svg>
+					<use xlink:href="./images/sprite.svg#arrow" />
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
+
+		</main>
+
+		<aside class="sidebar">
+	<div class="container sidebar__inner">
+		<form action="" class="sidebar__form">
+			<fieldset class="form__fieldset form__fieldset--vertical">
+				<legend class="form__legend">
+					A&nbsp;quick way to&nbsp;discuss details
+				</legend>
+				<div class="form__inner--flex">
+					<div class="input-wrapper">
+						<label for="name--details" class="label">Name*</label>
+						<input
+							id="name--details"
+							placeholder="Your name"
+							type="text"
+							class="input"
+						/>
+					</div>
+					<div class="input-wrapper">
+						<label for="phone--details" class="label">Phone*</label>
+						<input
+							id="phone--details"
+							placeholder="Your phone number"
+							type="tel"
+							class="input"
+						/>
+					</div>
+					<div class="input-wrapper">
+						<label for="mail" class="label">Email</label>
+						<input
+							id="mail"
+							placeholder="Your working email"
+							type="email"
+							class="input"
+						/>
+					</div>
+					<div class="input-wrapper">
+						<label for="message--details" class="label">Message*</label>
+						<textarea
+							name="message"
+							id="message--details"
+							cols=""
+							rows="20"
+							placeholder="Your message"
+							class="input input--textarea"
+						></textarea>
+					</div>
+					<div class="input-wrapper input-wrapper--checkbox">
+						<input type="checkbox" id="agree" class="checkbox" />
+						<label for="agree" class="label">
+							I&nbsp;agree to&nbsp;receive communications from Createx
+							Construction Bureau.
+						</label>
+					</div>
+					<button
+						class="button button--fill button--align-center sidebar__button"
+						type="submit"
+					>
+						Send request
+					</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</aside>
+
+		<footer class="footer">
+	<div class="container footer__container">
+		<h2 class="visually-hidden">Website footer</h2>
+		<div class="footer__left">
+			<div class="footer__left-top">
+				<a href="#" class="logo">
+					<img src="./images/logo-light.svg" alt="" class="logo__image" />
+				</a>
+				<ul class="social__list social__list--footer">
+					<li class="social__item">
+						<a
+							href="#"
+							target="_blank"
+							class="social__link social__link--light"
+						>
+							<svg>
+								<use xlink:href="./images/sprite-social.svg#whatsapp"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a
+							href="#"
+							target="_blank"
+							class="social__link social__link--light"
+						>
+							<svg>
+								<use xlink:href="./images/sprite-social.svg#messanger"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a
+							href="#"
+							target="_blank"
+							class="social__link social__link--light"
+						>
+							<svg>
+								<use xlink:href="./images/sprite-social.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a
+							href="#"
+							target="_blank"
+							class="social__link social__link--light"
+						>
+							<svg>
+								<use xlink:href="./images/sprite-social.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a
+							href="#"
+							target="_blank"
+							class="social__link social__link--light"
+						>
+							<svg>
+								<use xlink:href="./images/sprite-social.svg#youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p class="footer__text footer__text--mt24">
+				Createx Construction Bureau has been successfully operating in&nbsp;the
+				USA construction market since 2000. We&nbsp;are proud to&nbsp;offer you
+				quality construction and exemplary service. Our mission
+				is&nbsp;to&nbsp;set the highest standards for construction sphere.
+			</p>
+		</div>
+		<div class="footer__right">
+			<h3 class="footer__title">Let’s stay in touch</h3>
+			<form action="" class="footer__form">
+				<input
+					type="email"
+					placeholder="Your email address"
+					class="input input--dark footer__input"
+				/>
+				<button type="submit" class="button button--fill footer__button">
+					subscribe
+				</button>
+			</form>
+			<div class="footer__text footer__text--small footer__text--mt16">
+				*Subscribe to&nbsp;our newsletter to&nbsp;receive communications and
+				early updates from Createx Construction Bureau.
+			</div>
+		</div>
+		<div class="footer__flex">
+			<div class="footer__contacts">
+				<h3 class="footer__subtitle">Head office</h3>
+				<ul class="contacts__list contacts__list--footer">
+					<li class="contacts__item">
+						<address class="contacts__text contacts__address">
+							<span class="contacts__text--light">Address:</span> 8502 Preston
+							Rd. Inglewood, New York
+						</address>
+					</li>
+					<li class="contacts__item">
+						<p class="contacts__text">
+							<span class="contacts__text--light">Call:</span
+							><a href="tel:4055550128"> (405) 555-0128</a>
+						</p>
+					</li>
+					<li class="contacts__item">
+						<p class="contacts__text">
+							<span class="contacts__text--light">Email:</span>
+							<a href="mailto:hello@createx.com"> hello@createx.com</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__about footer__text--large">
+				<h3 class="footer__subtitle">WHO WE&nbsp;ARE</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="./about.html" class="footer__text footer__text--large"
+							>About Us</a
+						>
+					</li>
+					<li cla href="#" ss="footer__item">
+						<a
+							href="./available-positions.html"
+							class="footer__text footer__text--large"
+							>Available Positions</a
+						>
+					</li>
+					<li cla href="#" ss="footer__item">
+						<a href="./contacts.html" class="footer__text footer__text--large"
+							>Contacts</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__our-experience">
+			<h3 class="footer__subtitle">Our experience</h3>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a href="./services.html" class="footer__text footer__text--large"
+						>Services</a
+					>
+				</li>
+				<li class="footer__item">
+					<a href="./work.html" class="footer__text footer__text--large"
+						>Work</a
+					>
+				</li>
+				<li class="footer__item">
+					<a href="./news.html" class="footer__text footer__text--large"
+						>News</a
+					>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__bottom">
+			<span class="footer__text footer__text--light"
+				>&copy All rights reserved. Made with
+				<svg class="footer__svg--heart">
+					<use xlink:href="./images/sprite.svg#heart"></use>
+				</svg>
+				by Createx Studio
+			</span>
+			<a href="#header" class="footer__link--up footer__text--light">
+				<span>Go to top</span>
+				<div href="#hero" class="button-up"></div>
+			</a>
+		</div>
+	</div>
+</footer>
+
+	</body>
+</html>

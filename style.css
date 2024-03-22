@@ -75,6 +75,10 @@
   border-radius: 20px;
 }
 
+#site-adaptive-4 {
+  background-image: url("images/site-adaptive-4.jpg");
+}
+
 #site-adaptive-3 {
   background-image: url("images/site-adaptive-3.jpg");
 }
@@ -85,10 +89,6 @@
 
 #site-adaptive-1 {
   background-image: url("images/site-adaptive-1.jpg");
-}
-
-#simple-adaptive {
-  background-image: url("images/simple-adaptive.png");
 }
 
 #site-3 {
