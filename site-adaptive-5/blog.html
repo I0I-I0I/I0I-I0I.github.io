@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Description -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="image" content="./image/logo.png" />
+
+	<!-- For social -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="968" />
+	<meta property="og:image:height" content="504" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:url" content="http://localhost:3000/" />
+	<meta name="twitter:image:src" content="http://localhost:3000/image.png" />
+	<meta name="twitter:domain" content="localhost:3000" />
+	<meta name="twitter:site" content="@" />
+
+	<meta name="apple-mobile-web-app-title" content="Title" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- https://favicon.io/ -->
+	<!-- https://realfavicongenerator.net/ -->
+
+	<meta rel="preconnect" href="https://fonts.google.com/" />
+
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+
+	<!-- Theme -->
+	<meta name="msapplication-TileImage" content="./image/" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff" />
+
+	<!-- Default url -->
+	<link rel="canonical" href="" />
+
+	<!-- css and js -->
+	<link rel="stylesheet" href="styles/index.min.css?_v=20240419214100" />
+	<script src="js/app.min.js?_v=20240419214100" defer></script>
+
+	<!-- Swiper -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240419214100"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240419214100"></script>
+
+	<!-- Title -->
+
+	<title>Main</title>
+</head>
+
+
+	<body id="root" class="page__body">
+		<header class="header">
+	<div class="container header__container">
+		<a href="./index.html" class="logo-link header__logo">
+			<img src="./images/logo.svg" alt="" />
+		</a>
+		<div id="dropdown" class="dropdown">
+			<button id="dropdown-button" class="button button--burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="header__nav">
+				<ul class="nav__list nav__list--header">
+					<li class="nav__item">
+						<a href="./index.html" class="nav__link link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="./about.html" class="nav__link link">About</a>
+					</li>
+					<li class="nav__item">
+						<a href="./blog.html" class="nav__link link">Blog</a>
+					</li>
+					<li class="nav__item">
+						<a href="./pricing.html" class="nav__link link">Pricing</a>
+					</li>
+					<li class="nav__item nav__item--contact">
+						<a href="./contact.html" class="nav__link">Contact us </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+
+		<main class="main">
+			<section class="hero">
+	<div class="container hero__container">
+		<h1 class="title-main hero__title-main--about">
+			Activity &amp;&nbsp;Updates
+		</h1>
+		<p class="text-line hero__text--about">
+			Our biggest challenge is&nbsp;making sure we&rsquo;re always designing and
+			building products that will help you run your business better.
+		</p>
+	</div>
+</section>
+
+			<section class="blog-slider">
+	<h2 class="visually-hidden">Blog</h2>
+	<div class="container blog-slider__container">
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item--blog">
+					<a class="nav__link nav__link--blog link nav__link--current" href="#"
+						>Veiw all</a
+					>
+				</li>
+				<li class="nav__item--blog">
+					<a class="nav__link nav__link--blog link" href="#">Design</a>
+				</li>
+				<li class="nav__item--blog">
+					<a class="nav__link nav__link--blog link" href="#">Articles</a>
+				</li>
+				<li class="nav__item--blog">
+					<a class="nav__link nav__link--blog link" href="#">Product</a>
+				</li>
+				<li class="nav__item--blog">
+					<a class="nav__link nav__link--blog link" href="#"
+						>Software development</a
+					>
+				</li>
+				<li class="nav__item--blog">
+					<a class="nav__link nav__link--blog link" href="#"
+						>Customer success</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<div class="swiper-container swiper-blog">
+			<ul class="swiper-wrapper blog-slider__list">
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/1.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Practice making User Flow
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							In&nbsp;this article, we&rsquo;ll cover how to&nbsp;create user
+							flows
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/2.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+							<span class="blog-slider__author">by : Albert Sans</span>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Overview of &nbsp; the Design Principles
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							What are Design Principles?... To&nbsp;understand design
+							principles, we&nbsp;first discuss the principles.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/3.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Using Grid in &nbsp; website design
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							Andi: &laquo;What&rsquo;s the grid like?&raquo; Toni: &laquo;Like
+							below...&raquo;
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/1.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Practice making User Flow
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							In&nbsp;this article, we&rsquo;ll cover how to&nbsp;create user
+							flows
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/2.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+							<span class="blog-slider__author">by : Albert Sans</span>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Overview of &nbsp; the Design Principles
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							What are Design Principles?... To&nbsp;understand design
+							principles, we&nbsp;first discuss the principles.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/3.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Using Grid in &nbsp; website design
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							Andi: &laquo;What&rsquo;s the grid like?&raquo; Toni: &laquo;Like
+							below...&raquo;
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/1.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Practice making User Flow
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							In&nbsp;this article, we&rsquo;ll cover how to&nbsp;create user
+							flows
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/2.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+							<span class="blog-slider__author">by : Albert Sans</span>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Overview of &nbsp; the Design Principles
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							What are Design Principles?... To&nbsp;understand design
+							principles, we&nbsp;first discuss the principles.
+						</p>
+					</div>
+				</li>
+				<li class="swiper-slide blog-slider__item">
+					<div class="card-blog-slider">
+						<img src="./images/blog/3.jpg" alt="" class="blog-slider__image" />
+						<div class="blog-slider__info">
+							<time class="blog-slider__date" datetime="30-01-2021"
+								>Published in&nbsp;Insight Jan&nbsp;30, 2021</time
+							>
+						</div>
+						<h3 class="title-3 blog-slider__subtitle">
+							<a href="./detail-blog.html" class="link">
+								Using Grid in &nbsp; website design
+							</a>
+						</h3>
+						<p class="blog-slider__text">
+							Andi: &laquo;What&rsquo;s the grid like?&raquo; Toni: &laquo;Like
+							below...&raquo;
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+			<section class="blog">
+	<h2 class="visually-hidden">Articles</h2>
+	<div class="container blog__container">
+		<ul class="blog__list">
+			<li class="blog__item">
+				<div class="card-blog">
+					<img src="./images/blog/4.jpg" alt="" class="blog__image" />
+					<h3 class="card-blog__title title-3">
+						<a href="./detail-blog.html" class="link">
+							How we&nbsp;perform long-running tasks using AWS services
+						</a>
+					</h3>
+					<p class="blog__text text text--large">
+						Webflow is&nbsp;web design tool as&nbsp;well as&nbsp;a&nbsp;hosting
+						platform and CMS all in&nbsp;one. While you are probably familiar
+						with all of&nbsp;these, they are usually entirely separate tools.
+					</p>
+				</div>
+			</li>
+			<li class="blog__item">
+				<div class="card-blog">
+					<img src="./images/blog/5.jpg" alt="" class="blog__image" />
+					<h3 class="card-blog__title title-3">
+						<a href="./detail-blog.html" class="link">
+							How to&nbsp;ask when doing User Research
+						</a>
+					</h3>
+
+					<p class="blog__text text text--large">
+						Bro, the story is&nbsp;that you want to&nbsp;make
+						an&nbsp;application for buying and selling goods on&nbsp;the market.
+						During user research, what do&nbsp;you think you will ask people?
+					</p>
+				</div>
+			</li>
+			<li class="blog__item">
+				<div class="card-blog">
+					<img src="./images/blog/6.jpg" alt="" class="blog__image" />
+					<h3 class="card-blog__title title-3">
+						<a href="./detail-blog.html" class="link">
+							Layout Exploration&nbsp;&mdash; Simple exercise but big effect
+						</a>
+					</h3>
+					<p class="blog__text text text--large">
+						Make alternatives or&nbsp;other options for the design we&nbsp;are
+						making. For example, we&nbsp;are creating a&nbsp;website design.
+						Then there is&nbsp;the testimonial section.
+					</p>
+				</div>
+			</li>
+			<li class="blog__item">
+				<div class="card-blog">
+					<img src="./images/blog/7.jpg" alt="" class="blog__image" />
+					<h3 class="card-blog__title title-3">
+						<a href="./detail-blog.html" class="link">
+							Webflow Break the Coding Barrier
+						</a>
+					</h3>
+					<p class="blog__text text text--large">
+						Webflow is&nbsp;web design tool as&nbsp;well as&nbsp;a&nbsp;hosting
+						platform and CMS all in&nbsp;one. While you are probably familiar
+						with all of&nbsp;these, they are usually entirely separate tools.
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+			<section class="articles">
+	<div class="container article__container">
+		<div class="articles__top">
+			<div class="articles__top-left">
+				<h2 class="articles__title title">Articles</h2>
+				<p class="text">
+					Complex tech decoded by&nbsp;engineers, business trends analyzed
+					by&nbsp;experts.
+				</p>
+			</div>
+			<div class="buttons-block">
+				<button
+					id="swiper-articles-button-prev"
+					class="button button--slider button--slider-large button__slider--prev"
+				>
+					<svg>
+						<use xlink:href="./images/sprite.svg#arrow"></use>
+					</svg>
+				</button>
+				<button
+					id="swiper-articles-button-next"
+					class="button button--slider button--slider-large button__slider--next"
+				>
+					<svg>
+						<use xlink:href="./images/sprite.svg#arrow"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<div class="swiper-container swiper-articles">
+			<ul class="articles__list swiper-wrapper">
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/1.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							List of&nbsp;UX&nbsp;Designer Portfolio&nbsp;/ Case Studies where
+							you can make money
+						</a>
+					</h3>
+					<p class="text articles__text">
+						Here are some portfolios&nbsp;/ Case Studies from UX&nbsp;Designers
+						that you can use as&nbsp;a&nbsp;reference for creating
+						a&nbsp;portfolio. Two interesting things from their portfolio are:
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/2.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							Elements that may be&nbsp;missed when designing the&nbsp;UI
+						</a>
+					</h3>
+					<p class="articles__text text">
+						This is&nbsp;an&nbsp;article that talks about the little elements
+						that are often overlooked when designing&nbsp;UI.
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/3.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							Skyrocketing in&nbsp;The Designing Career, Why Not?
+						</a>
+					</h3>
+					<p class="articles__text text">
+						Ever thought of&nbsp;jumping into the world of&nbsp;design
+						as&nbsp;a&nbsp;career? If&nbsp;not, you may want to&nbsp;look
+						at&nbsp;what the word &lsquo;design&rsquo; actually means. Design
+						is&nbsp;a&nbsp;method of&nbsp;designing aesthetic actions that are
+						carried out.
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/1.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							List of&nbsp;UX&nbsp;Designer Portfolio&nbsp;/ Case Studies where
+							you can make money
+						</a>
+					</h3>
+					<p class="articles__text text">
+						Here are some portfolios&nbsp;/ Case Studies from UX&nbsp;Designers
+						that you can use as&nbsp;a&nbsp;reference for creating
+						a&nbsp;portfolio. Two interesting things from their portfolio are:
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/2.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							Elements that may be&nbsp;missed when designing the&nbsp;UI
+						</a>
+					</h3>
+					<p class="articles__text text">
+						This is&nbsp;an&nbsp;article that talks about the little elements
+						that are often overlooked when designing&nbsp;UI.
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/3.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							Skyrocketing in&nbsp;The Designing Career, Why Not?
+						</a>
+					</h3>
+					<p class="articles__text text">
+						Ever thought of&nbsp;jumping into the world of&nbsp;design
+						as&nbsp;a&nbsp;career? If&nbsp;not, you may want to&nbsp;look
+						at&nbsp;what the word &lsquo;design&rsquo; actually means. Design
+						is&nbsp;a&nbsp;method of&nbsp;designing aesthetic actions that are
+						carried out.
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/1.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							List of&nbsp;UX&nbsp;Designer Portfolio&nbsp;/ Case Studies where
+							you can make money
+						</a>
+					</h3>
+					<p class="articles__text text">
+						Here are some portfolios&nbsp;/ Case Studies from UX&nbsp;Designers
+						that you can use as&nbsp;a&nbsp;reference for creating
+						a&nbsp;portfolio. Two interesting things from their portfolio are:
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/2.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							Elements that may be&nbsp;missed when designing the&nbsp;UI
+						</a>
+					</h3>
+					<p class="articles__text text">
+						This is&nbsp;an&nbsp;article that talks about the little elements
+						that are often overlooked when designing&nbsp;UI.
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+				<li class="swiper-slide articles__item">
+					<img src="./images/articles/3.jpg" alt="" class="articles__image" />
+					<h3 class="articles__subtitle title-3">
+						<a href="./detail-blog.html" class="link">
+							Skyrocketing in&nbsp;The Designing Career, Why Not?
+						</a>
+					</h3>
+					<p class="articles__text text">
+						Ever thought of&nbsp;jumping into the world of&nbsp;design
+						as&nbsp;a&nbsp;career? If&nbsp;not, you may want to&nbsp;look
+						at&nbsp;what the word &lsquo;design&rsquo; actually means. Design
+						is&nbsp;a&nbsp;method of&nbsp;designing aesthetic actions that are
+						carried out.
+					</p>
+					<button
+						class="button button--light button--round button--dark button--large articles__button"
+					>
+						Read more
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+		</main>
+
+		<footer class="footer footer--light">
+	<h2 class="visually-hidden">footer</h2>
+	<aside class="sidebar">
+	<div class="container sidebar__container">
+		<div class="sidebar__left">
+			<h2 class="title sidebar__title">Think beyond the wave</h2>
+			<p class="text-line sidebar__text">
+				Ask about Sans products, pricing, implementation, or&nbsp;anything else.
+				Our highly trained reps are standing&nbsp;by, ready to&nbsp;help
+			</p>
+		</div>
+		<button class="button button--round button--large sidebar__button">
+			Try for free
+		</button>
+	</div>
+</aside>
+
+	<div class="container footer__container">
+		<div class="footer__top">
+			<div class="footer-col footer__top-left">
+				<a href="#" class="footer__logo logo-link" aria-label="logo link"></a>
+				<p class="footer__text text text--small">
+					We&nbsp;built an&nbsp;elegant solution. Our team created a&nbsp;fully
+					integrated sales and marketing solution for SMBs
+				</p>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Company</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="./about.html" class="footer__link link">About</a>
+					</li>
+					<li class="footer__item">
+						<a href="./pricing.html" class="footer__link link">Pricing</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Jobs</a>
+					</li>
+					<li class="footer__item">
+						<a href="./blog.html" class="footer__link link">Blog</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Product</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Sales Software</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Marketplace</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link"
+							>Terms &amp;&nbsp;Conditions</a
+						>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Privacy Policy</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Discovery</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link link">CRM Comparision</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Partner Program</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">What is CRM</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Resource</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Help center</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Community</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Knowledge Base</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Academy</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Support</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom--dn">
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__bottom-list">
+					<li class="footer__bottom-item">
+						<span class="text">Privacy Policy</span>
+					</li>
+					<li class="footer__bottom-item">
+						<span class="text">Terms &amp;&nbsp;Conditions</span>
+					</li>
+					<li class="footer__bottom-item">
+						<span class="text">Support</span>
+					</li>
+				</ul>
+			</div>
+			<span class="footer__copyright"
+				>&copy;&nbsp;Copyright 2023 All Rights Reserved</span
+			>
+		</div>
+	</div>
+</footer>
+
+	</body>
+</html>

@@ -1,943 +1,1022 @@
 <!doctype html>
 <html lang="en" class="page">
-	<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Description -->
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="image" content="./image/logo.png" />
+    <!-- Description -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="image" content="./image/logo.png" />
 
-	<!-- For social -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="" />
-	<meta property="og:description" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:locale" content="ru_RU" />
-	<meta property="og:image" content="" />
-	<meta property="og:image:width" content="968" />
-	<meta property="og:image:height" content="504" />
+    <!-- For social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="968" />
+    <meta property="og:image:height" content="504" />
 
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:description" content="" />
-	<meta name="twitter:url" content="http://localhost:3000/" />
-	<meta name="twitter:image:src" content="http://localhost:3000/image.png" />
-	<meta name="twitter:domain" content="localhost:3000" />
-	<meta name="twitter:site" content="@" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:url" content="http://localhost:3000/" />
+    <meta name="twitter:image:src" content="http://localhost:3000/image.png" />
+    <meta name="twitter:domain" content="localhost:3000" />
+    <meta name="twitter:site" content="@" />
 
-	<meta name="apple-mobile-web-app-title" content="Title" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Title" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-	<!-- https://favicon.io/ -->
-	<!-- https://realfavicongenerator.net/ -->
+    <!-- https://favicon.io/ -->
+    <!-- https://realfavicongenerator.net/ -->
 
-	<meta rel="preconnect" href="https://fonts.google.com/" />
+    <meta rel="preconnect" href="https://fonts.google.com/" />
 
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
 
-	<!-- Theme -->
-	<meta name="msapplication-TileImage" content="./image/" />
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff" />
+    <!-- Theme -->
+    <meta name="msapplication-TileImage" content="./image/" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
 
-	<!-- Default url -->
-	<link rel="canonical" href="" />
+    <!-- Default url -->
+    <link rel="canonical" href="" />
 
-	<!-- css and js -->
-	<link rel="stylesheet" href="styles/index.min.css?_v=20240322181315" />
-	<script src="js/app.min.js?_v=20240322181315" defer></script>
-	<title>Main</title>
+    <!-- css and js -->
+    <link rel="stylesheet" href="styles/index.min.css?_v=20240322181315" />
+    <script src="js/app.min.js?_v=20240322181315" defer></script>
+    <title>Main</title>
 
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240322181315"
-	/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240322181315"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240322181315"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240322181315"></script>
+  </head>
 
+  <body class="page__body">
+    <header id="header" class="header">
+      <div class="container header__inner">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.svg" alt="" class="logo__image" />
+        </a>
+        <div id="dropdown" class="dropdown">
+          <button
+            id="button-burger"
+            class="button--burger"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-	<body class="page__body">
-		<header id="header" class="header">
-			<div class="container header__inner">
-	<a href="./index.html" class="logo">
-		<img src="./images/logo.svg" alt="" class="logo__image" />
-	</a>
-	<div id="dropdown" class="dropdown">
-		<button id="button-burger" class="button--burger" aria-label="Open menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
+          <div id="dropdown-inner" class="dropdown__inner">
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="./about.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./services.html" class="nav__link">Services</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./work.html" class="nav__link">Work</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./news.html" class="nav__link">News</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./contacts.html" class="nav__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts__list--header">
+              <li class="contacts__item--header contacts__item--phone">
+                <span class="contacts__caption">Call us</span>
+                <a href="tel:4055550128" class="contacts__link"
+                  >(405) 555-0128</a
+                >
+              </li>
+              <li class="contacts__item--header contacts__item--mail">
+                <span class="contacts__caption">Talk to us</span>
+                <a href="mailto:hello@createx.com" class="contacts__link"
+                  >hello@createx.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
-		<div id="dropdown-inner" class="dropdown__inner">
-			<nav class="nav header__nav">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a href="./about.html" class="nav__link">About Us</a>
-					</li>
-					<li class="nav__item">
-						<a href="./services.html" class="nav__link">Services</a>
-					</li>
-					<li class="nav__item">
-						<a href="./work.html" class="nav__link">Work</a>
-					</li>
-					<li class="nav__item">
-						<a href="./news.html" class="nav__link">News</a>
-					</li>
-					<li class="nav__item">
-						<a href="./contacts.html" class="nav__link">Contacts</a>
-					</li>
-				</ul>
-			</nav>
-			<ul class="contacts__list--header">
-				<li class="contacts__item--header contacts__item--phone">
-					<span class="contacts__caption">Call us</span>
-					<a href="tel:4055550128" class="contacts__link">(405) 555-0128</a>
-				</li>
-				<li class="contacts__item--header contacts__item--mail">
-					<span class="contacts__caption">Talk to us</span>
-					<a href="mailto:hello@createx.com" class="contacts__link"
-						>hello@createx.com</a
-					>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
+    <main class="main">
+      <section id="hero" class="hero hero--about">
+        <div class="container hero__inner">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="./index.html" class="breadcrumbs__link">Homepage</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link breadcrumbs__link--current"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <h1 class="title-main">About&nbsp;us</h1>
+          <p class="hero__text hero__text--services">
+            Createx Construction Bureau has been successfully operating
+            in&nbsp;the USA construction market since 2000. We&nbsp;are proud
+            to&nbsp;offer you quality construction and exemplary service.
+          </p>
+        </div>
+        <div class="hero__shadow"></div>
+      </section>
 
-		</header>
+      <section class="info">
+        <div class="container info__container">
+          <h2 class="visually-hidden">Info</h2>
+          <ul class="info__list">
+            <li class="info__item info__item--like">
+              <h3 class="info__subtitle">60%</h3>
+              <span class="info__text"
+                >Clients on&nbsp;the recommendation of&nbsp;friends</span
+              >
+            </li>
+            <li class="info__item info__item--painting">
+              <h3 class="info__subtitle">2400+</h3>
+              <span class="info__text">Apartments renovated</span>
+            </li>
+            <li class="info__item info__item--helmet">
+              <h3 class="info__subtitle">670</h3>
+              <span class="info__text">Qualified specialists</span>
+            </li>
+            <li class="info__item info__item--pantone">
+              <h3 class="info__subtitle">150000+&nbsp;<sup>m2</sup></h3>
+              <span class="info__text">Finishing work was carried out</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-		<main class="main">
-			<section id="hero" class="hero hero--about">
-	<div class="container hero__inner">
-		<div class="breadcrumbs">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__item">
-					<a href="./index.html" class="breadcrumbs__link">Homepage</a>
-				</li>
-				<li class="breadcrumbs__item">
-					<a href="#" class="breadcrumbs__link breadcrumbs__link--current"
-						>About Us</a
-					>
-				</li>
-			</ul>
-		</div>
-		<h1 class="title-main">About&nbsp;us</h1>
-		<p class="hero__text hero__text--services">
-			Createx Construction Bureau has been successfully operating in&nbsp;the
-			USA construction market since 2000. We&nbsp;are proud to&nbsp;offer you
-			quality construction and exemplary service.
-		</p>
-	</div>
-	<div class="hero__shadow"></div>
-</section>
+      <section class="quote">
+        <div class="container quote__container">
+          <h2 class="visually-hidden">CEO quotation</h2>
+          <blockquote class="quote__content quote__content--about">
+            <p class="quote__text">
+              Dapibus nec vitae ante mattis. Aliquam phasellus ac&nbsp;dui
+              augue&nbsp;in. Sed aliquet in&nbsp;egestas hac at&nbsp;proin sed
+              quam. Etiam aliquet sagittis non, massa cum pulvinar.
+              Et&nbsp;in&nbsp;leo, tempus purus vestibulum ut&nbsp;blandit
+              et&nbsp;mi. Odio massa purus vel praesent arcu enim elit felis
+              viverra.
+            </p>
+            <p class="quote__text">
+              Magna aliquam interdum mattis ipsum arcu. Elit odio elit viverra
+              quis metus amet eleifend amet. Vet suspendisse faucibus tempor
+              ipsum integer.
+            </p>
+            <footer class="quote__footer">
+              <div class="quote__footer--left">
+                <p class="quote__author">Courtney Alexander</p>
+                <p class="quote__position">CEO - Createx Construction Bureau</p>
+              </div>
+              <div class="quote__footer--right">
+                <svg class="quote__signature">
+                  <use xlink:href="./images/sprite.svg#signature"></use>
+                </svg>
+              </div>
+            </footer>
+          </blockquote>
+          <picture
+            ><source srcset="./images/quote/image.webp" type="image/webp" />
+            <img src="./images/quote/image.jpg" alt="" class="quote__image"
+          /></picture>
+        </div>
+      </section>
 
-			<section class="info">
-	<div class="container info__container">
-		<h2 class="visually-hidden">Info</h2>
-		<ul class="info__list">
-			<li class="info__item info__item--like">
-				<h3 class="info__subtitle">60%</h3>
-				<span class="info__text"
-					>Clients on&nbsp;the recommendation of&nbsp;friends</span
-				>
-			</li>
-			<li class="info__item info__item--painting">
-				<h3 class="info__subtitle">2400+</h3>
-				<span class="info__text">Apartments renovated</span>
-			</li>
-			<li class="info__item info__item--helmet">
-				<h3 class="info__subtitle">670</h3>
-				<span class="info__text">Qualified specialists</span>
-			</li>
-			<li class="info__item info__item--pantone">
-				<h3 class="info__subtitle">150000+&nbsp;<sup>m2</sup></h3>
-				<span class="info__text">Finishing work was carried out</span>
-			</li>
-		</ul>
-	</div>
-</section>
+      <section class="our-values our-value--about">
+        <div class="container our-values__inner">
+          <h2 class="title our-values__title">Our core values</h2>
+          <p class="title__description">
+            Our mission is&nbsp;to&nbsp;set the highest standards for
+            construction sphere.
+          </p>
+          <ul class="our-values__list">
+            <li class="our-values__item our-values__item--quality">
+              <h3 class="subtitle our-values__subtitle">Quality</h3>
+              <p class="our-values__text">
+                Culpa nostrud commodo ea&nbsp;consequat aliquip reprehenderit.
+                Veniam velit nostrud aliquip sunt.
+              </p>
+            </li>
+            <li class="our-values__item our-values__item--safety">
+              <h3 class="subtitle our-values__subtitle">Safety</h3>
+              <p class="our-values__text">
+                Anim reprehenderit sint voluptate exercitation adipisicing
+                laborum adipisicing. Minim empor est&nbsp;ea.
+              </p>
+            </li>
+            <li class="our-values__item our-values__item--comfort">
+              <h3 class="subtitle our-values__subtitle">Comfort</h3>
+              <p class="our-values__text">
+                Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
+                voluptate ullamco proident ea&nbsp;ad.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-			<section class="quote">
-	<div class="container quote__container">
-		<h2 class="visually-hidden">CEO quotation</h2>
-		<blockquote class="quote__content quote__content--about">
-			<p class="quote__text">
-				Dapibus nec vitae ante mattis. Aliquam phasellus ac&nbsp;dui
-				augue&nbsp;in. Sed aliquet in&nbsp;egestas hac at&nbsp;proin sed quam.
-				Etiam aliquet sagittis non, massa cum pulvinar. Et&nbsp;in&nbsp;leo,
-				tempus purus vestibulum ut&nbsp;blandit et&nbsp;mi. Odio massa purus vel
-				praesent arcu enim elit felis viverra.
-			</p>
-			<p class="quote__text">
-				Magna aliquam interdum mattis ipsum arcu. Elit odio elit viverra quis
-				metus amet eleifend amet. Vet suspendisse faucibus tempor ipsum integer.
-			</p>
-			<footer class="quote__footer">
-				<div class="quote__footer--left">
-					<p class="quote__author">Courtney Alexander</p>
-					<p class="quote__position">CEO - Createx Construction Bureau</p>
-				</div>
-				<div class="quote__footer--right">
-					<svg class="quote__signature">
-						<use xlink:href="./images/sprite.svg#signature"></use>
-					</svg>
-				</div>
-			</footer>
-		</blockquote>
-		<picture><source srcset="./images/quote/image.webp" type="image/webp"><img src="./images/quote/image.jpg" alt="" class="quote__image" /></picture>
-	</div>
-</section>
+      <section class="history">
+        <div class="container history__container">
+          <div class="history__top">
+            <h2 class="title">Our history</h2>
+            <div class="buttons__block history__buttons">
+              <button
+                class="button-slider button-slider--prev history__button-slider history__button-slider--prev"
+              >
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow" />
+                </svg>
+              </button>
+              <button
+                class="button-slider button-slider--next hitory__button-slider history__button-slider--next"
+              >
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="history__content">
+            <div class="history__right">
+              <div class="swiper swiper-history">
+                <ul class="swiper-wrapper photos__list">
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                  <li class="history__item swiper-slide">
+                    <img
+                      src="./images/history/image.jpg"
+                      alt=""
+                      class="history__image"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <p class="history__text">
+                Bcelerisque dapibus pharetra nibh semper iaculis duis viverra
+                porttitor in. Eu nec vitae, malesuada vitae egestas integer et
+                morbi. Maecenas sed quis diam posuere malesuada magnis.
+                Bcelerisque dapibus. Eu nec vitae,
+              </p>
+            </div>
 
-			<section class="our-values our-value--about">
-	<div class="container our-values__inner">
-		<h2 class="title our-values__title">Our core values</h2>
-		<p class="title__description">
-			Our mission is&nbsp;to&nbsp;set the highest standards for construction
-			sphere.
-		</p>
-		<ul class="our-values__list">
-			<li class="our-values__item our-values__item--quality">
-				<h3 class="subtitle our-values__subtitle">Quality</h3>
-				<p class="our-values__text">
-					Culpa nostrud commodo ea&nbsp;consequat aliquip reprehenderit. Veniam
-					velit nostrud aliquip sunt.
-				</p>
-			</li>
-			<li class="our-values__item our-values__item--safety">
-				<h3 class="subtitle our-values__subtitle">Safety</h3>
-				<p class="our-values__text">
-					Anim reprehenderit sint voluptate exercitation adipisicing laborum
-					adipisicing. Minim empor est&nbsp;ea.
-				</p>
-			</li>
-			<li class="our-values__item our-values__item--comfort">
-				<h3 class="subtitle our-values__subtitle">Comfort</h3>
-				<p class="our-values__text">
-					Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
-					voluptate ullamco proident ea&nbsp;ad.
-				</p>
-			</li>
-		</ul>
-	</div>
-</section>
+            <div thumbsslider class="swiper gallery-thumbs-history">
+              <ul class="swiper-wrapper history__list">
+                <li class="history__item swiper-slide">Present</li>
+                <li class="history__item swiper-slide">March 2019</li>
+                <li class="history__item swiper-slide">November 2018</li>
+                <li class="history__item swiper-slide">July 2015</li>
+                <li class="history__item swiper-slide">August 2010</li>
+                <li class="history__item swiper-slide">February 2007</li>
+                <li class="history__item swiper-slide">May 2004</li>
+                <li class="history__item swiper-slide">October 2001</li>
+                <li class="history__item swiper-slide">June 2000</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="history">
-	<div class="container history__container">
-		<div class="history__top">
-			<h2 class="title">Our history</h2>
-			<div class="buttons__block history__buttons">
-				<button
-					class="button-slider button-slider--prev history__button-slider history__button-slider--prev"
-				>
-					<svg>
-						<use xlink:href="./images/sprite.svg#arrow" />
-					</svg>
-				</button>
-				<button
-					class="button-slider button-slider--next hitory__button-slider history__button-slider--next"
-				>
-					<svg>
-						<use xlink:href="./images/sprite.svg#arrow" />
-					</svg>
-				</button>
-			</div>
-		</div>
-		<div class="history__content">
-			<div class="history__right">
-				<div class="swiper swiper-history">
-					<ul class="swiper-wrapper photos__list">
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-						<li class="history__item swiper-slide">
-							<img
-								src="./images/history/image.jpg"
-								alt=""
-								class="history__image"
-							/>
-						</li>
-					</ul>
-				</div>
-				<p class="history__text">
-					Bcelerisque dapibus pharetra nibh semper iaculis duis viverra
-					porttitor in. Eu nec vitae, malesuada vitae egestas integer et morbi.
-					Maecenas sed quis diam posuere malesuada magnis. Bcelerisque dapibus.
-					Eu nec vitae,
-				</p>
-			</div>
+      <section class="partners clients--transparent">
+        <div class="container partners__inner">
+          <h2 class="title partners__title">Our partners</h2>
+          <p class="partners__text">
+            We&nbsp;are supported by&nbsp;12+&nbsp;industry bodies and media
+            partners
+          </p>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-1.png"
+                alt="client logo ForSale"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-2.png"
+                alt="client logo Heppy Home"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-3.png"
+                alt="client logo Sentinal Consulting"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-4.png"
+                alt="client logo Higher Fit"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-5.png"
+                alt="client logo InDepth Consulting"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-6.png"
+                alt="client logo Sunset Reality"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-1.png"
+                alt="client logo ForSale"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-2.png"
+                alt="client logo Heppy Home"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-3.png"
+                alt="client logo Sentinal Consulting"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-4.png"
+                alt="client logo Higher Fit"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-5.png"
+                alt="client logo InDepth Consulting"
+                class="clients__image"
+              />
+            </li>
+            <li class="clients__item">
+              <img
+                src="images/partners/client-logo-6.png"
+                alt="client logo Sunset Reality"
+                class="clients__image"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
 
-			<div thumbsslider class="swiper gallery-thumbs-history">
-				<ul class="swiper-wrapper history__list">
-					<li class="history__item swiper-slide">Present</li>
-					<li class="history__item swiper-slide">March 2019</li>
-					<li class="history__item swiper-slide">November 2018</li>
-					<li class="history__item swiper-slide">July 2015</li>
-					<li class="history__item swiper-slide">August 2010</li>
-					<li class="history__item swiper-slide">February 2007</li>
-					<li class="history__item swiper-slide">May 2004</li>
-					<li class="history__item swiper-slide">October 2001</li>
-					<li class="history__item swiper-slide">June 2000</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
+      <section class="team">
+        <div class="container team__container">
+          <h2 class="title team__title">Our team</h2>
+          <p class="team__text">
+            People are at&nbsp;the heart of&nbsp;Createx Construction Bureau
+          </p>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Courtney Alexander</h3>
+              <span class="team__position">CEO, Co-Founder</span>
+            </li>
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Calvin Fox</h3>
+              <span class="team__position">CTO, Co-Founder</span>
+            </li>
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Courtney Alexander</h3>
+              <span class="team__position">CEO, Co-Founder</span>
+            </li>
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Johnny Lane</h3>
+              <span class="team__position">Commercial Manager</span>
+            </li>
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Diane Mccoy</h3>
+              <span class="team__position">Director of Human Resources</span>
+            </li>
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Judith Warren</h3>
+              <span class="team__position">Lead Accountant</span>
+            </li>
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Floyd Simmmons</h3>
+              <span class="team__position">Finacial Director</span>
+            </li>
+            <li class="team__item">
+              <div class="team__item--wrapper">
+                <picture
+                  ><source srcset="./images/team/1.webp" type="image/webp" />
+                  <img src="./images/team/1.jpg" alt="" class="team__image"
+                /></picture>
+                <ul class="team__contacts-list">
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team__contact">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg>
+                        <use
+                          xlink:href="./images/sprite-social.svg#linked-in"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="team__name">Serenity Edwards</h3>
+              <span class="team__position">Director of Marketing</span>
+            </li>
+          </ul>
+          <p class="team__description">
+            Become a&nbsp;part of&nbsp;the best team in&nbsp;the construction
+            market of&nbsp;the USA.
+            <a href="./available-positions.html" class="team__link"
+              >Available Positions</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
 
-			<section class="partners clients--transparent">
-	<div class="container partners__inner">
-		<h2 class="title partners__title">Our partners</h2>
-		<p class="partners__text">
-			We&nbsp;are supported by&nbsp;12+&nbsp;industry bodies and media partners
-		</p>
-		<ul class="clients__list">
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-1.png"
-					alt="client logo ForSale"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-2.png"
-					alt="client logo Heppy Home"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-3.png"
-					alt="client logo Sentinal Consulting"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-4.png"
-					alt="client logo Higher Fit"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-5.png"
-					alt="client logo InDepth Consulting"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-6.png"
-					alt="client logo Sunset Reality"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-1.png"
-					alt="client logo ForSale"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-2.png"
-					alt="client logo Heppy Home"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-3.png"
-					alt="client logo Sentinal Consulting"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-4.png"
-					alt="client logo Higher Fit"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-5.png"
-					alt="client logo InDepth Consulting"
-					class="clients__image"
-				/>
-			</li>
-			<li class="clients__item">
-				<img
-					src="images/partners/client-logo-6.png"
-					alt="client logo Sunset Reality"
-					class="clients__image"
-				/>
-			</li>
-		</ul>
-	</div>
-</section>
+    <aside class="sidebar">
+      <div class="container sidebar__inner">
+        <form action="" class="sidebar__form">
+          <fieldset class="form__fieldset form__fieldset--vertical">
+            <legend class="form__legend">
+              A&nbsp;quick way to&nbsp;discuss details
+            </legend>
+            <div class="form__inner--flex">
+              <div class="input-wrapper">
+                <label for="name--details" class="label">Name*</label>
+                <input
+                  id="name--details"
+                  placeholder="Your name"
+                  type="text"
+                  class="input"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="phone--details" class="label">Phone*</label>
+                <input
+                  id="phone--details"
+                  placeholder="Your phone number"
+                  type="tel"
+                  class="input"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="mail" class="label">Email</label>
+                <input
+                  id="mail"
+                  placeholder="Your working email"
+                  type="email"
+                  class="input"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="message--details" class="label">Message*</label>
+                <textarea
+                  name="message"
+                  id="message--details"
+                  cols=""
+                  rows="20"
+                  placeholder="Your message"
+                  class="input input--textarea"
+                ></textarea>
+              </div>
+              <div class="input-wrapper input-wrapper--checkbox">
+                <input type="checkbox" id="agree" class="checkbox" />
+                <label for="agree" class="label">
+                  I&nbsp;agree to&nbsp;receive communications from Createx
+                  Construction Bureau.
+                </label>
+              </div>
+              <button
+                class="button button--fill button--align-center sidebar__button"
+                type="submit"
+              >
+                Send request
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </aside>
 
-			<section class="team">
-	<div class="container team__container">
-		<h2 class="title team__title">Our team</h2>
-		<p class="team__text">
-			People are at&nbsp;the heart of&nbsp;Createx Construction Bureau
-		</p>
-		<ul class="team__list">
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Courtney Alexander</h3>
-				<span class="team__position">CEO, Co-Founder</span>
-			</li>
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Calvin Fox</h3>
-				<span class="team__position">CTO, Co-Founder</span>
-			</li>
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Courtney Alexander</h3>
-				<span class="team__position">CEO, Co-Founder</span>
-			</li>
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Johnny Lane</h3>
-				<span class="team__position">Commercial Manager</span>
-			</li>
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Diane Mccoy</h3>
-				<span class="team__position">Director of Human Resources</span>
-			</li>
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Judith Warren</h3>
-				<span class="team__position">Lead Accountant</span>
-			</li>
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Floyd Simmmons</h3>
-				<span class="team__position">Finacial Director</span>
-			</li>
-			<li class="team__item">
-				<div class="team__item--wrapper">
-					<picture><source srcset="./images/team/1.webp" type="image/webp"><img src="./images/team/1.jpg" alt="" class="team__image" /></picture>
-					<ul class="team__contacts-list">
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="team__contact">
-							<a href="#" target="_blank" class="social__link">
-								<svg>
-									<use xlink:href="./images/sprite-social.svg#linked-in"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<h3 class="team__name">Serenity Edwards</h3>
-				<span class="team__position">Director of Marketing</span>
-			</li>
-		</ul>
-		<p class="team__description">
-			Become a&nbsp;part of&nbsp;the best team in&nbsp;the construction market
-			of&nbsp;the USA.
-			<a href="./available-positions.html" class="team__link"
-				>Available Positions</a
-			>
-		</p>
-	</div>
-</section>
-
-			<section class="map">
-	<div class="container map__container">
-		<h2 class="title map__title">We&nbsp;work worldwide</h2>
-	</div>
-</section>
-
-		</main>
-
-		<aside class="sidebar">
-	<div class="container sidebar__inner">
-		<form action="" class="sidebar__form">
-			<fieldset class="form__fieldset form__fieldset--vertical">
-				<legend class="form__legend">
-					A&nbsp;quick way to&nbsp;discuss details
-				</legend>
-				<div class="form__inner--flex">
-					<div class="input-wrapper">
-						<label for="name--details" class="label">Name*</label>
-						<input
-							id="name--details"
-							placeholder="Your name"
-							type="text"
-							class="input"
-						/>
-					</div>
-					<div class="input-wrapper">
-						<label for="phone--details" class="label">Phone*</label>
-						<input
-							id="phone--details"
-							placeholder="Your phone number"
-							type="tel"
-							class="input"
-						/>
-					</div>
-					<div class="input-wrapper">
-						<label for="mail" class="label">Email</label>
-						<input
-							id="mail"
-							placeholder="Your working email"
-							type="email"
-							class="input"
-						/>
-					</div>
-					<div class="input-wrapper">
-						<label for="message--details" class="label">Message*</label>
-						<textarea
-							name="message"
-							id="message--details"
-							cols=""
-							rows="20"
-							placeholder="Your message"
-							class="input input--textarea"
-						></textarea>
-					</div>
-					<div class="input-wrapper input-wrapper--checkbox">
-						<input type="checkbox" id="agree" class="checkbox" />
-						<label for="agree" class="label">
-							I&nbsp;agree to&nbsp;receive communications from Createx
-							Construction Bureau.
-						</label>
-					</div>
-					<button
-						class="button button--fill button--align-center sidebar__button"
-						type="submit"
-					>
-						Send request
-					</button>
-				</div>
-			</fieldset>
-		</form>
-	</div>
-</aside>
-
-		<footer class="footer">
-	<div class="container footer__container">
-		<h2 class="visually-hidden">Website footer</h2>
-		<div class="footer__left">
-			<div class="footer__left-top">
-				<a href="#" class="logo">
-					<img src="./images/logo-light.svg" alt="" class="logo__image" />
-				</a>
-				<ul class="social__list social__list--footer">
-					<li class="social__item">
-						<a
-							href="#"
-							target="_blank"
-							class="social__link social__link--light"
-						>
-							<svg>
-								<use xlink:href="./images/sprite-social.svg#whatsapp"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a
-							href="#"
-							target="_blank"
-							class="social__link social__link--light"
-						>
-							<svg>
-								<use xlink:href="./images/sprite-social.svg#messanger"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a
-							href="#"
-							target="_blank"
-							class="social__link social__link--light"
-						>
-							<svg>
-								<use xlink:href="./images/sprite-social.svg#facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a
-							href="#"
-							target="_blank"
-							class="social__link social__link--light"
-						>
-							<svg>
-								<use xlink:href="./images/sprite-social.svg#twitter"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a
-							href="#"
-							target="_blank"
-							class="social__link social__link--light"
-						>
-							<svg>
-								<use xlink:href="./images/sprite-social.svg#youtube"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<p class="footer__text footer__text--mt24">
-				Createx Construction Bureau has been successfully operating in&nbsp;the
-				USA construction market since 2000. We&nbsp;are proud to&nbsp;offer you
-				quality construction and exemplary service. Our mission
-				is&nbsp;to&nbsp;set the highest standards for construction sphere.
-			</p>
-		</div>
-		<div class="footer__right">
-			<h3 class="footer__title">Let’s stay in touch</h3>
-			<form action="" class="footer__form">
-				<input
-					type="email"
-					placeholder="Your email address"
-					class="input input--dark footer__input"
-				/>
-				<button type="submit" class="button button--fill footer__button">
-					subscribe
-				</button>
-			</form>
-			<div class="footer__text footer__text--small footer__text--mt16">
-				*Subscribe to&nbsp;our newsletter to&nbsp;receive communications and
-				early updates from Createx Construction Bureau.
-			</div>
-		</div>
-		<div class="footer__flex">
-			<div class="footer__contacts">
-				<h3 class="footer__subtitle">Head office</h3>
-				<ul class="contacts__list contacts__list--footer">
-					<li class="contacts__item">
-						<address class="contacts__text contacts__address">
-							<span class="contacts__text--light">Address:</span> 8502 Preston
-							Rd. Inglewood, New York
-						</address>
-					</li>
-					<li class="contacts__item">
-						<p class="contacts__text">
-							<span class="contacts__text--light">Call:</span
-							><a href="tel:4055550128"> (405) 555-0128</a>
-						</p>
-					</li>
-					<li class="contacts__item">
-						<p class="contacts__text">
-							<span class="contacts__text--light">Email:</span>
-							<a href="mailto:hello@createx.com"> hello@createx.com</a>
-						</p>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__about footer__text--large">
-				<h3 class="footer__subtitle">WHO WE&nbsp;ARE</h3>
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a href="./about.html" class="footer__text footer__text--large"
-							>About Us</a
-						>
-					</li>
-					<li cla href="#" ss="footer__item">
-						<a
-							href="./available-positions.html"
-							class="footer__text footer__text--large"
-							>Available Positions</a
-						>
-					</li>
-					<li cla href="#" ss="footer__item">
-						<a href="./contacts.html" class="footer__text footer__text--large"
-							>Contacts</a
-						>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer__our-experience">
-			<h3 class="footer__subtitle">Our experience</h3>
-			<ul class="footer__list">
-				<li class="footer__item">
-					<a href="./services.html" class="footer__text footer__text--large"
-						>Services</a
-					>
-				</li>
-				<li class="footer__item">
-					<a href="./work.html" class="footer__text footer__text--large"
-						>Work</a
-					>
-				</li>
-				<li class="footer__item">
-					<a href="./news.html" class="footer__text footer__text--large"
-						>News</a
-					>
-				</li>
-			</ul>
-		</div>
-		<div class="footer__bottom">
-			<span class="footer__text footer__text--light"
-				>&copy All rights reserved. Made with
-				<svg class="footer__svg--heart">
-					<use xlink:href="./images/sprite.svg#heart"></use>
-				</svg>
-				by Createx Studio
-			</span>
-			<a href="#header" class="footer__link--up footer__text--light">
-				<span>Go to top</span>
-				<div href="#hero" class="button-up"></div>
-			</a>
-		</div>
-	</div>
-</footer>
-
-	</body>
+    <footer class="footer">
+      <div class="container footer__container">
+        <h2 class="visually-hidden">Website footer</h2>
+        <div class="footer__left">
+          <div class="footer__left-top">
+            <a href="#" class="logo">
+              <img src="./images/logo-light.svg" alt="" class="logo__image" />
+            </a>
+            <ul class="social__list social__list--footer">
+              <li class="social__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="social__link social__link--light"
+                >
+                  <svg>
+                    <use xlink:href="./images/sprite-social.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="social__link social__link--light"
+                >
+                  <svg>
+                    <use
+                      xlink:href="./images/sprite-social.svg#messanger"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="social__link social__link--light"
+                >
+                  <svg>
+                    <use xlink:href="./images/sprite-social.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="social__link social__link--light"
+                >
+                  <svg>
+                    <use xlink:href="./images/sprite-social.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="social__link social__link--light"
+                >
+                  <svg>
+                    <use xlink:href="./images/sprite-social.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__text footer__text--mt24">
+            Createx Construction Bureau has been successfully operating
+            in&nbsp;the USA construction market since 2000. We&nbsp;are proud
+            to&nbsp;offer you quality construction and exemplary service. Our
+            mission is&nbsp;to&nbsp;set the highest standards for construction
+            sphere.
+          </p>
+        </div>
+        <div class="footer__right">
+          <h3 class="footer__title">Let’s stay in touch</h3>
+          <form action="" class="footer__form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="input input--dark footer__input"
+            />
+            <button type="submit" class="button button--fill footer__button">
+              subscribe
+            </button>
+          </form>
+          <div class="footer__text footer__text--small footer__text--mt16">
+            *Subscribe to&nbsp;our newsletter to&nbsp;receive communications and
+            early updates from Createx Construction Bureau.
+          </div>
+        </div>
+        <div class="footer__flex">
+          <div class="footer__contacts">
+            <h3 class="footer__subtitle">Head office</h3>
+            <ul class="contacts__list contacts__list--footer">
+              <li class="contacts__item">
+                <address class="contacts__text contacts__address">
+                  <span class="contacts__text--light">Address:</span> 8502
+                  Preston Rd. Inglewood, New York
+                </address>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">
+                  <span class="contacts__text--light">Call:</span
+                  ><a href="tel:4055550128"> (405) 555-0128</a>
+                </p>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">
+                  <span class="contacts__text--light">Email:</span>
+                  <a href="mailto:hello@createx.com"> hello@createx.com</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__about footer__text--large">
+            <h3 class="footer__subtitle">WHO WE&nbsp;ARE</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="./about.html" class="footer__text footer__text--large"
+                  >About Us</a
+                >
+              </li>
+              <li cla href="#" ss="footer__item">
+                <a
+                  href="./available-positions.html"
+                  class="footer__text footer__text--large"
+                  >Available Positions</a
+                >
+              </li>
+              <li cla href="#" ss="footer__item">
+                <a
+                  href="./contacts.html"
+                  class="footer__text footer__text--large"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__our-experience">
+          <h3 class="footer__subtitle">Our experience</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="./services.html" class="footer__text footer__text--large"
+                >Services</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="./work.html" class="footer__text footer__text--large"
+                >Work</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="./news.html" class="footer__text footer__text--large"
+                >News</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__text footer__text--light"
+            >&copy All rights reserved. Made with
+            <svg class="footer__svg--heart">
+              <use xlink:href="./images/sprite.svg#heart"></use>
+            </svg>
+            by Createx Studio
+          </span>
+          <a href="#header" class="footer__link--up footer__text--light">
+            <span>Go to top</span>
+            <div href="#hero" class="button-up"></div>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

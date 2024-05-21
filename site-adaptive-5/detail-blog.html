@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Description -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="image" content="./image/logo.png" />
+
+	<!-- For social -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="968" />
+	<meta property="og:image:height" content="504" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:url" content="http://localhost:3000/" />
+	<meta name="twitter:image:src" content="http://localhost:3000/image.png" />
+	<meta name="twitter:domain" content="localhost:3000" />
+	<meta name="twitter:site" content="@" />
+
+	<meta name="apple-mobile-web-app-title" content="Title" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- https://favicon.io/ -->
+	<!-- https://realfavicongenerator.net/ -->
+
+	<meta rel="preconnect" href="https://fonts.google.com/" />
+
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+
+	<!-- Theme -->
+	<meta name="msapplication-TileImage" content="./image/" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff" />
+
+	<!-- Default url -->
+	<link rel="canonical" href="" />
+
+	<!-- css and js -->
+	<link rel="stylesheet" href="styles/index.min.css?_v=20240419214100" />
+	<script src="js/app.min.js?_v=20240419214100" defer></script>
+
+	<!-- Swiper -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240419214100"
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240419214100"></script>
+
+	<!-- Title -->
+
+	<title>Main</title>
+</head>
+
+
+	<body id="root" class="page__body">
+		<header class="header">
+	<div class="container header__container">
+		<a href="./index.html" class="logo-link header__logo">
+			<img src="./images/logo.svg" alt="" />
+		</a>
+		<div id="dropdown" class="dropdown">
+			<button id="dropdown-button" class="button button--burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="header__nav">
+				<ul class="nav__list nav__list--header">
+					<li class="nav__item">
+						<a href="./index.html" class="nav__link link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="./about.html" class="nav__link link">About</a>
+					</li>
+					<li class="nav__item">
+						<a href="./blog.html" class="nav__link link">Blog</a>
+					</li>
+					<li class="nav__item">
+						<a href="./pricing.html" class="nav__link link">Pricing</a>
+					</li>
+					<li class="nav__item nav__item--contact">
+						<a href="./contact.html" class="nav__link">Contact us </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+
+		<main class="main">
+			<section class="hero">
+	<div class="container detail-blog__container hero__container">
+		<h1 class="title-main">
+			How we&nbsp;perform long-running tasks using AWS services
+		</h1>
+	</div>
+</section>
+
+			<section class="blog-content">
+	<div class="container detail-blog__container">
+		<div class="detail-blog__header">
+			<div class="author-block">
+				<img
+					src="./images/comments/author-1.jpg"
+					alt=""
+					class="author__image"
+				/>
+				<strong class="author__name">Renee Wells</strong>
+				<span class="text author__position">Product Designer, Quotient</span>
+			</div>
+			<time class="text" datetime="10-11-2023"
+				>10&nbsp;min read November&nbsp;10, 2023</time
+			>
+		</div>
+		<img
+			src="./images/detail-blog/main.jpg"
+			alt=""
+			class="detail-blog__image"
+		/>
+		<p class="detail-blog__text text">
+			Depending on&nbsp;the input, this can result in&nbsp;using a&nbsp;lot
+			of&nbsp;processing power and time. The whole process would take
+			approximately 5&nbsp;seconds to&nbsp;return a&nbsp;result to&nbsp;the
+			client. Keep in&nbsp;mind we&rsquo;re talking about 1&nbsp;item,
+			a&nbsp;contact from a&nbsp;contact book. After a&nbsp;while, a&nbsp;new
+			requirement is&nbsp;added. Solution must support companies that manage
+			their contacts organized in&nbsp;files. We&nbsp;agreed to&nbsp;develop
+			a&nbsp;web application that would support upload of&nbsp;dataset files,
+			like .csv. The new web application should support third party
+			integrations. Some of&nbsp;them are the ESP/CRM services, like Mailchimp.
+			User does not need to&nbsp;see the result immediately. System can later
+			notify the user about the result, when the process finishes. This
+			information is&nbsp;the key that we&nbsp;need to&nbsp;leverage
+			on&nbsp;when developing our solution. So&nbsp;here&rsquo;s how
+			we&nbsp;did&nbsp;it.
+		</p>
+		<h3 class="detail-blog__title">Initial approach</h3>
+		<p class="detail-blog__text">
+			Our initial approach went like this: The web application would read a .csv
+			file line-by-line and submit an&nbsp;array of&nbsp;entries to&nbsp;the
+			backend REST API. Processing is&nbsp;in&nbsp;real time, immediately after
+			the user makes a&nbsp;request for the process to&nbsp;start,
+			he&nbsp;expects a&nbsp;result. Another approach is&nbsp;to&nbsp;apply
+			vertical scaling to&nbsp;AWS architecture. Meaning we&nbsp;used larger,
+			more expensive instances that have more RAM and processing power. This
+			system worked well for smaller datasets, maybe
+			up&nbsp;to&nbsp;5k&nbsp;entries, but for larger datasets multiple problems
+			arose. This solution is&nbsp;prone to&nbsp;failure due to&nbsp;long
+			request time. Also, because of&nbsp;some 3rd party services that
+			aren&rsquo;t optimized for large scale loads or&nbsp;they don&rsquo;t have
+			batch endpoints. 3rd party services also tend to&nbsp;protect their
+			architecture from making a&nbsp;huge bill on&nbsp;their end. The whole
+			process was done in&nbsp;real-time. The request can take a&nbsp;lot
+			of&nbsp;time hanging in&nbsp;there while the backend would do&nbsp;all the
+			work and return the result to&nbsp;the client. The request was limited
+			to&nbsp;300 seconds (at&nbsp;time of&nbsp;writing the article) before AWS
+			would cancel&nbsp;it... Also I&nbsp;need to&nbsp;mention that the user has
+			to&nbsp;wait a&nbsp;few minutes to&nbsp;see the results. They can&rsquo;t
+			use the app during the process, which makes for a&nbsp;bad user
+			experience.
+		</p>
+	</div>
+</section>
+
+			<section class="written-by">
+	<h2 class="visually-hidden">Written by</h2>
+	<div class="container written-by__container detail-blog__container">
+		<img
+			src="./images/detail-blog/author-large.jpg"
+			alt=""
+			class="written-by__image"
+		/>
+		<div class="written-by__top-left">
+			<ul class="team__social team__social--written-by">
+				<li class="team__social-item">
+					<a href="#">
+						<svg class="team__icon">
+							<use xlink:href="images/sprite.svg#facebook"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="team__social-item">
+					<a href="#">
+						<svg class="team__icon">
+							<use xlink:href="images/sprite.svg#twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="team__social-item">
+					<a href="#">
+						<svg class="team__icon">
+							<use xlink:href="images/sprite.svg#linkedin-stroke"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="team__social-item">
+					<a href="#">
+						<svg class="team__icon">
+							<use xlink:href="images/sprite.svg#instagram"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<a href="#" class="text text--small">Share this article</a>
+		</div>
+		<p class="text text--small text--gray">Written by</p>
+		<h3 class="title-3">Renee Wells</h3>
+		<p class="text text--small text--gray">Product Designer, Quotient</p>
+		<p class="text detail-blog__text written-by__footer">
+			Skilled in&nbsp;React Native, iOS and backend, Toni has
+			a&nbsp;demonstrated knowledge of&nbsp;the information technology and
+			services industry, with plenty of&nbsp;hands-on experience to&nbsp;back
+			it&nbsp;up.
+		</p>
+	</div>
+</section>
+
+		</main>
+
+		<footer class="footer footer--dark">
+	<h2 class="visually-hidden">footer</h2>
+	<aside class="sidebar">
+	<div class="container sidebar__container">
+		<div class="sidebar__left">
+			<h2 class="title sidebar__title">Think beyond the wave</h2>
+			<p class="text-line sidebar__text">
+				Ask about Sans products, pricing, implementation, or&nbsp;anything else.
+				Our highly trained reps are standing&nbsp;by, ready to&nbsp;help
+			</p>
+		</div>
+		<button class="button button--round button--large sidebar__button">
+			Try for free
+		</button>
+	</div>
+</aside>
+
+	<div class="container footer__container">
+		<div class="footer__top">
+			<div class="footer-col footer__top-left">
+				<a href="#" class="footer__logo logo-link" aria-label="logo link"></a>
+				<p class="footer__text text text--small">
+					We&nbsp;built an&nbsp;elegant solution. Our team created a&nbsp;fully
+					integrated sales and marketing solution for SMBs
+				</p>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Company</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="./about.html" class="footer__link link">About</a>
+					</li>
+					<li class="footer__item">
+						<a href="./pricing.html" class="footer__link link">Pricing</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Jobs</a>
+					</li>
+					<li class="footer__item">
+						<a href="./blog.html" class="footer__link link">Blog</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Product</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Sales Software</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Marketplace</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link"
+							>Terms &amp;&nbsp;Conditions</a
+						>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Privacy Policy</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Discovery</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link link">CRM Comparision</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Partner Program</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">What is CRM</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Resource</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h3 class="footer__subtitle">Help center</h3>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Community</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Knowledge Base</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Academy</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link link">Support</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom--dn">
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<svg>
+								<use xlink:href="./images/sprite.svg#linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__bottom-list">
+					<li class="footer__bottom-item">
+						<span class="text">Privacy Policy</span>
+					</li>
+					<li class="footer__bottom-item">
+						<span class="text">Terms &amp;&nbsp;Conditions</span>
+					</li>
+					<li class="footer__bottom-item">
+						<span class="text">Support</span>
+					</li>
+				</ul>
+			</div>
+			<span class="footer__copyright"
+				>&copy;&nbsp;Copyright 2023 All Rights Reserved</span
+			>
+		</div>
+	</div>
+</footer>
+
+	</body>
+</html>
